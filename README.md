@@ -1,2 +1,2 @@
-# rokity.github.io
+# Riccardo Amadio
 Riccardo Amadio Resume
