@@ -1,0 +1,14 @@
+
+.title{
+    font-size: 20px;
+}
+
+.title-container{
+        width:25%;
+        padding:10px;   
+        border: 2px solid black; 
+}
+
+body{
+  font-family:   'Inconsolata', Courier;
+}

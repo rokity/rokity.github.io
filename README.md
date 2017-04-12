@@ -1,2 +1,2 @@
-# Riccardo Amadio
-Riccardo Amadio Resume
+# GitHub Page For Riccardo Amadio
+
