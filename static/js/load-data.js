@@ -1,15 +1,16 @@
 window.onload = () => {
 
-     rendering((experience),"experience","left");   
-     rendering((formation),"formation","right");   
-             
-                        
+     renderingContainer((experience),"experience","left");   
+     renderingContainer((formation),"formation","right");   
+     renderingSubContainer((certification),"CERTIFICATION");      
+     renderingSubContainer((award),"AWARD");   
+     renderingSubContainer((contact),"CONTACT");                   
             
 
     
 };
 
-function rendering(data,section,orientation)
+function renderingContainer(data,section,orientation)
 {   
     var container = document.getElementById(section);
     data.forEach(function(element,i,array) {
@@ -34,6 +35,33 @@ function rendering(data,section,orientation)
             rule_desc_h4.innerHTML += "</br> "+element.description;
         core_div.appendChild(rule_desc_h4);
         container.appendChild(core_div);
+    });
+}
+
+function renderingSubContainer(data,section)
+{
+    var subcontainer = document.getElementById("subcontainer");
+    var title_row = document.createElement("div");
+    title_row.className="row";
+    var title = document.createElement("h3");
+    title.className = "black right";
+    title.innerHTML = section;
+    title_row.appendChild(title);
+    subcontainer.appendChild(title_row);
+
+    data.forEach((element,index,array) => 
+    {
+        var content_row = document.createElement("div");
+        content_row.className = "row";
+        var content = document.createElement("h4");
+        content.className = "gray right";
+        if(element.value)
+            content.innerHTML = element.value;
+        else 
+            content.innerHTML = element.mail+ "</br>" + element.cell;        
+        content_row.appendChild(content);
+        subcontainer.appendChild(content_row);
+
     });
 }
 
