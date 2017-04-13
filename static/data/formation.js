@@ -1,6 +1,6 @@
 var formation=[
     {
-        "period" : "September 2009 — June 2014",
+        "period" : "September 2009 - June 2014",
         "position" : "Computer Science Expert",
         "company" : "I.T.I.S. \"G.MARCONI\" JESI",
         "description" : "Obtained the IT Expert degree with 75/100."

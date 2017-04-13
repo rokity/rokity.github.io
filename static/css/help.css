@@ -7,10 +7,10 @@
 }
 
 .vertical-line{
-    border:none;
-    border-left: 1px solid hsla(200, 10%, 50%,100);
-    height: 200vh;
-    width: 1px;   
+    border : none;
+    border-left: 1px solid hsla(200, 10%, 50%,100);  
+    width: 1px;  
+   
 }
 
 .container{
@@ -23,12 +23,13 @@
 .row:after {
          content: "";
          clear:both;
-         display: table;
+         display: table;  
+                    
     }
 
-[class*='col-'] {
+    [class*='col-'] {
         float: left;
-        min-height: 1px; 
+        min-height: 1px;              
     }
 
     .col-1{ width: 16.66%; }

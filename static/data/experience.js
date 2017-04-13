@@ -18,13 +18,13 @@ var experience=[
             "description" : "I created the first cover-keyboard designed for blind people. It is a braille keyboard with 8 keys, suitable for any kind of smartphone. I created this board in a Hackathon made by Codemotion for NeoMobile and after we won the competition and after I took part to the Rome Maker Faire with this project."
         },
         {
-            "period" : "January 2015 — September 2015",
+            "period" : "January 2015 - September 2015",
             "company" : "Unifacile",
             "position" : "Junior Full Stack Developer",
             "description" : "I grown my skills of Web Developer and I worked to new API for the back-end of the platform with Symfony. I learn Angular for the first time and I created many pages for new feature of the platform. I increased my skills of team working and management."
          },
          {
-            "period" : "May 2014 — February 2015",
+            "period" : "May 2014 - February 2015",
             "company" : "Elite s.c.p.a.",
             "position" : "Android Developer",
             "description" : "In this experience I developed an application for domotic house.The objective of this application was to control the TV and show some alert. I learned new skills of Android like the communication from devices and the UI of an application."
