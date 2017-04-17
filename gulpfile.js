@@ -6,14 +6,14 @@ var gulp = require('gulp')
 ,imagemin = require('gulp-imagemin')
 ,concat = require('gulp-concat');  ;
  
-// task
+// minify HTML
 gulp.task('minify-html',() =>{
     gulp.src('src/index.html') // path to your files
     .pipe(minifyHtml())
     .pipe(gulp.dest(''));
 });
 
-// task
+// minify and concat CSS
 gulp.task('minify-css', () =>{
     gulp.src('src/static/css/*.css') // path to your file
     .pipe(concat("style.css"))
@@ -22,7 +22,7 @@ gulp.task('minify-css', () =>{
     .pipe(gulp.dest('static/css/'));
 });
 
-// task
+// minify and concat JS
 gulp.task('minify-js',() =>{
     gulp.src('src/static/js/*.js') // path to your files
     .pipe(concat("script.js"))
@@ -31,7 +31,7 @@ gulp.task('minify-js',() =>{
     .pipe(gulp.dest('static/js/'));
 });
 
-// task
+// minify and concat DATA
 gulp.task('minify-data', () => {
     gulp.src('src/static/data/*.js') // path to your files
     .pipe(concat("data.js"))
@@ -40,11 +40,20 @@ gulp.task('minify-data', () => {
     .pipe(gulp.dest('static/data/'));
 });
 
-//task 
+//minify IMAGES 
 gulp.task("minify-img",() => {
     gulp.src('src/static/img/*')
 		.pipe(imagemin())
-		.pipe(gulp.dest('static/img'))
+		.pipe(gulp.dest('static/img/'))
+});
+
+//task concat data and js
+gulp.task("concat-data-js",() => {
+    gulp.src(["static/js/script.js","static/data/data.js"])
+		.pipe(concat("sripts.js"))
+		.pipe(gulp.dest(''))
+        .pipe(uglify())
+        .pipe(gulp.dest(''));       
 });
 
 
@@ -52,4 +61,4 @@ gulp.task("minify-img",() => {
 gulp.task('default', 
 ['minify-html', 'minify-css',
   'minify-js' , 'minify-data',
-  'minify-img']);
+  'minify-img' , 'concat-data-js']);
