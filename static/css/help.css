@@ -21,30 +21,22 @@
 
 .row:before,
 .row:after {
-         content: "";
-         clear:both;
-         display: table;  
-         
-                    
+   content: "";
+   clear:both;
+   display: table;  
     }
 
-    [class*='col-'] {
-        float: left;
-        min-height: 1px;  
-        height: 100% ;
-        overflow:auto;                     
+[class*='col-'] {
+   float: left;
+   min-height: 1px;  
+   height: 100% ;
+   overflow:auto;                     
     }
-    [class*='col-']::-webkit-scrollbar { 
-    display: none; 
-        }
 
-    .col-1{ width: 16.66%;  }
-    .col-2{ width: 33.33%; height: 100%;  }
-    .col-3{ width: 50%;  height: 100%;    }
-    .col-4{ width: 66.664%;}
-    .col-5{ width: 83.33%; }
-    .col-6{ width: 100%;   }
+[class*='col-']::-webkit-scrollbar { display: none; }
 
+.col-2{ width: 33.33%; height: 100%;  }
+.col-3{ width: 50%;  height: 100%;    }
 
 .black { color:black; }
 .gray { color:rgb(120,120,120); }
