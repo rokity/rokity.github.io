@@ -50,7 +50,7 @@ gulp.task("minify-img",() => {
 //task concat data and js
 gulp.task("concat-data-js",() => {
     gulp.src(["static/js/script.js","static/data/data.js"])
-		.pipe(concat("sripts.js"))
+		.pipe(concat("scripts.js"))
 		.pipe(gulp.dest(''))
         .pipe(uglify())
         .pipe(gulp.dest(''));       
