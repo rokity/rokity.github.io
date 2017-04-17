@@ -1,5 +1,1 @@
-var certification = [
-    {
-        "value":"Course of TDD and Unit Testing with Javascript from DevMarche Community"
-    }
-]
+var certification=[{value:"Course of TDD and Unit Testing with Javascript from DevMarche Community"}];
