@@ -1,5 +1,4 @@
 window.onload = function() {
-
      renderingContainer((experience),"experience","left");   
      renderingContainer((formation),"formation","right");   
      renderingSubContainer((certification),"CERTIFICATION");      
