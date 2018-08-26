@@ -1,6 +1,6 @@
 var experience=[
         {
-            "period" : "May 2017 - Present",
+            "period" : "May 2017 - May 2018",
             "company" : "Regione Marche",
             "position" : "Full Stack Web Developer",
             "description" : "In this experience, I developed an application for countability of earthquake. I choose to use Node JS, SQL Server, Polymer for the facility of building microservices and  C.R.U.D. operations.In the meanwhile, I developed some modules for Cohesion, with ASP NET 4, Bootstrap and jQuery."
