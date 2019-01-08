@@ -33,7 +33,7 @@
 
 [class*='col-']::-webkit-scrollbar { display: none; }
 
-.col-2{ width: 33.33%; height: 100%;  }
+.col-2{ width: 49%; height: 100%;  }
 .col-3{ width: 50%;  height: 100%;    }
 
 .black { color:black; }
