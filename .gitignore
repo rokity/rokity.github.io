@@ -1,3 +1,6 @@
+#Locks files from npm and yarn
+package-lock.json
+yarn.lock
 # Logs
 logs
 *.log
