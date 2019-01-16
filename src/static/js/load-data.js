@@ -1,3 +1,9 @@
+import { award } from "../data/award"; 
+import {certification} from '../data/certification'
+import {contact} from '../data/contact'
+import {experience} from '../data/experience'
+import {formation} from '../data/formation'
+
 window.onload = function() {
      renderingContainer((experience),"experience","left");   
      renderingContainer((formation),"formation","right");   

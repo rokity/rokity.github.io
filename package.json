@@ -3,15 +3,17 @@
   "version": "1.0.0",
   "description": "My Personal Page Riccardo Amadio",
   "main": "index.js",
-  "private":"true",
+  "private": "true",
   "repository": {
     "url": "https://github.com/rokity/rokity.github.io",
     "type": "git"
   },
+  "scripts": {
+    "build": "webpack"
+  },
   "author": "riccardo <riccardo.amadio1@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
     "gulp-imagemin": "^3.2.0",
     "gulp-minify-css": "^1.2.4",
@@ -19,6 +21,9 @@
     "gulp-uglify": "^2.1.2"
   },
   "devDependencies": {
+    "mini-css-extract-plugin": "^0.5.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
+    "uglifyjs-webpack-plugin": "^2.1.1",
     "webpack": "^4.28.1",
     "webpack-cli": "^3.2.1"
   }

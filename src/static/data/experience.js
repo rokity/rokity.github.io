@@ -1,4 +1,4 @@
-var experience=[
+exports.experience=[
         {
             "period" : "May 2017 - May 2018",
             "company" : "Regione Marche",
