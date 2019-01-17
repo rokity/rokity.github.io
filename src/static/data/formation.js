@@ -1,4 +1,4 @@
-exports.formation = [
+const formation = [
     {
         "period": "September 2009 - June 2014",
         "position": "Computer Science Expert",
