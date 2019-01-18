@@ -1,6 +1,6 @@
 
 function geolocation() {
-    fetch('http://ip-api.com/json')
+    fetch('https://ipapi.co/json')
         .then(function (response) { return response.text(); })
         .then(function (text) {
             return JSON.parse(text)
