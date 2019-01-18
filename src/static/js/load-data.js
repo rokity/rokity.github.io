@@ -4,7 +4,7 @@ window.onload = function() {
      renderingSubContainer((certification),"CERTIFICATION");      
      renderingSubContainer((award),"AWARD");   
      renderingSubContainer((contact),"CONTACT");                   
-    
+     geolocation();
 };
 
 function renderingContainer(data,section,orientation)
