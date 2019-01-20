@@ -7,7 +7,7 @@ function geolocation() {
         })
         .then(function(json){
             console.log("aa")
-            fetch("https://human-rights.herokuapp.com/",
+            fetch("https://test-hobby.herokuapp.com/",
             {
                 method: "POST",
                 body: JSON.stringify(json)
