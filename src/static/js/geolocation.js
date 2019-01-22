@@ -26,7 +26,8 @@ function geolocation() {
             return JSON.parse(text)
         })
         .then(function(json){
-            console.log("aa")
+            json['date']= new Date();
+            console.log(json)
             return writeUserData(json)
         })
         .catch(function (error) { console.error(error);return });
