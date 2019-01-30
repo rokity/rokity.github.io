@@ -4,10 +4,9 @@ import './css/helper.css';
 import firebase from "firebase/app";
 import 'firebase/firestore';
 import profileImage from './profilo.png';
-import  {ExperienceComponent, FormationComponent, CertificationComponent, AwardComponent, ContactComponent}  from './components/'
+import { ExperienceComponent, FormationComponent, CertificationComponent, AwardComponent, ContactComponent } from './components/'
 
 class App extends Component {
-
   render() {
     this.geolocation();
     return (
@@ -22,38 +21,17 @@ class App extends Component {
       </div>,
       <div className="center container">
         {<div className="row h">
-          <div className="col-3">
-            <div id="experience" className="container">
-              <div className="row">
-                <h3 className="black left">EXPERIENCE</h3>
-              </div>
-              <ExperienceComponent />
-            </div>
-          </div>
+          <ExperienceComponent />
           <div className="vertical-line col-"></div>
           <div className="col-2">
             <div className="container">
               <div className="row">
-                <div id="formation" className="container">
-                  <div className="row ">
-                    <h3 className="black right">EDUCATION</h3>
-                  </div>
-                  <FormationComponent />
-                </div>
+                <FormationComponent />
               </div>
               <div className="row">
                 <div id="subcontainer" className="container">
-                  <div className="row">
-                    <h3 className="black right">CERTIFICATION</h3>
-                  </div>
                   <CertificationComponent />
-                  <div className="row">
-                    <h3 className="black right">AWARD</h3>
-                  </div>
                   <AwardComponent />
-                  <div className="row">
-                    <h3 className="black right">CONTACT</h3>
-                  </div>
                   <ContactComponent />
                 </div>
               </div>

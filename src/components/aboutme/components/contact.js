@@ -3,7 +3,10 @@ import { contact } from './../data'
 
 class ContactComponent extends Component {
   render() {
-    return contact.map(element => {
+    return [<div className="row">
+      <h3 className="black right">CONTACT</h3>
+    </div>,
+    contact.map(element => {
       if (element.value != null)
         return <div className="row">
           <h4 className="gray right">{element.value}</h4>
@@ -12,7 +15,7 @@ class ContactComponent extends Component {
         return <div className="row">
           <h4 className="gray right">{element.mail} <br></br> {element.cell}</h4>
         </div>
-    })
+    })]
   }
 }
 
