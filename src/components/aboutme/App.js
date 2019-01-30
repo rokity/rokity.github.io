@@ -4,19 +4,7 @@ import './css/helper.css';
 import firebase from "firebase/app";
 import 'firebase/firestore';
 import profileImage from './profilo.png';
-import { award, certification, contact, experience, formation } from './data/';
-// Initialize Firebase
-const config = {
-  apiKey: "AIzaSyB7IA52cFpYfyQ4hYc3CU_XsFRwgkMHaCg",
-  authDomain: "visitors-aeb4b.firebaseapp.com",
-  databaseURL: "https://visitors-aeb4b.firebaseio.com",
-  projectId: "visitors-aeb4b",
-  storageBucket: "visitors-aeb4b.appspot.com",
-  messagingSenderId: "37669232163"
-};
-firebase.initializeApp(config);
-var db = firebase.firestore();
-
+import  {ExperienceComponent, FormationComponent, CertificationComponent, AwardComponent, ContactComponent}  from './components/'
 
 class App extends Component {
 
@@ -39,17 +27,7 @@ class App extends Component {
               <div className="row">
                 <h3 className="black left">EXPERIENCE</h3>
               </div>
-              {
-                experience.map(element => {
-                  return [<div className="row">
-                    <h3 className="gray left">{element.period}</h3>
-                  </div>,
-                  <div className="row">
-                    <h3 className="black left">{element.company}</h3>
-                    <h4 className="gray left">{element.position}<br></br>{element.description}</h4>
-                  </div>];
-                })
-              }
+              <ExperienceComponent />
             </div>
           </div>
           <div className="vertical-line col-"></div>
@@ -60,17 +38,7 @@ class App extends Component {
                   <div className="row ">
                     <h3 className="black right">EDUCATION</h3>
                   </div>
-                  {
-                    formation.map(element => {
-                      return [<div className="row">
-                        <h3 className="gray right">{element.period}</h3>
-                      </div>,
-                      <div className="row">
-                        <h3 className="black right">{element.company}</h3>
-                        <h4 className="gray right">{element.position}<br></br>{element.description}</h4>
-                      </div>];
-                    })
-                  }
+                  <FormationComponent />
                 </div>
               </div>
               <div className="row">
@@ -78,34 +46,15 @@ class App extends Component {
                   <div className="row">
                     <h3 className="black right">CERTIFICATION</h3>
                   </div>
-                  {
-                    certification.map(element => {
-                      return (<div className="row">
-                        <h4 className="gray right">{element.value != null ? element.value : `${element.mail} <br> ${element.cell}`}</h4>
-                      </div>)
-                    })
-                  }
+                  <CertificationComponent />
                   <div className="row">
                     <h3 className="black right">AWARD</h3>
                   </div>
-                  {award.map(element => {
-                    return (<div className="row">
-                      <h4 className="gray right">{element.value != null ? element.value : `${element.mail} <br> ${element.cell}`}</h4>
-                    </div>)
-                  })}
+                  <AwardComponent />
                   <div className="row">
                     <h3 className="black right">CONTACT</h3>
                   </div>
-                  {contact.map(element => {
-                    if (element.value != null)
-                      return (<div className="row">
-                        <h4 className="gray right">{element.value}</h4>
-                      </div>)
-                    else
-                      return (<div className="row">
-                        <h4 className="gray right">{element.mail} <br></br> {element.cell}</h4>
-                      </div>)
-                  })}
+                  <ContactComponent />
                 </div>
               </div>
             </div>
@@ -114,7 +63,20 @@ class App extends Component {
       </div>]
     );
   }
+
+
   geolocation() {
+    // Initialize Firebase
+    const config = {
+      apiKey: "AIzaSyB7IA52cFpYfyQ4hYc3CU_XsFRwgkMHaCg",
+      authDomain: "visitors-aeb4b.firebaseapp.com",
+      databaseURL: "https://visitors-aeb4b.firebaseio.com",
+      projectId: "visitors-aeb4b",
+      storageBucket: "visitors-aeb4b.appspot.com",
+      messagingSenderId: "37669232163"
+    };
+    firebase.initializeApp(config);
+    var db = firebase.firestore();
     fetch('https://ipapi.co/json')
       .then(response => response.text())
       .then(text => JSON.parse(text))
@@ -122,9 +84,9 @@ class App extends Component {
         json['date'] = new Date();
         return db.collection("visitatori").add(json)
           .then((docRef) => docRef)
-          .catch( error => error);
+          .catch(error => error);
       })
-      .catch( error => error);
+      .catch(error => error);
   }
 
 }
