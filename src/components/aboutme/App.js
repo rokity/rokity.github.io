@@ -55,6 +55,7 @@ class App extends Component {
     };
     firebase.initializeApp(config);
     var db = firebase.firestore();
+    //Get IP Info
     fetch('https://ipapi.co/json')
       .then(response => response.text())
       .then(text => JSON.parse(text))
