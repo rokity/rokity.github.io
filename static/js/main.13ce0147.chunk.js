@@ -290,13 +290,8 @@
                 company: "Regione Marche",
                 position: "Full Stack Web Developer",
                 description: "In this experience, I developed an application for countability of earthquake. I choose to use Node JS, SQL Server, Polymer for the facility of building microservices and  C.R.U.D. operations.In the meanwhile, I developed some modules for Cohesion, with ASP NET 4, Bootstrap and jQuery."
-            },{
-                period: "May 2017 - May 2018",
-                company: "Regione Marche",
-                position: "Full Stack Web Developer",
-                description: "In this experience, I developed an application for countability of earthquake. I choose to use Node JS, SQL Server, Polymer for the facility of building microservices and  C.R.U.D. operations.In the meanwhile, I developed some modules for Cohesion, with ASP NET 4, Bootstrap and jQuery."
             }, {
-                period: "May 2016 - Present",
+                period: "May 2016 - Oct 2017",
                 company: "MyHomeAgenda",
                 position: "CTO & Co-Founder",
                 description: "In this experience I increased my skills of team working and manager of a team . I created new way of work to increase the production of the team. I actually working with Polymer and NodeJS , but we had some part of the project created with ReactJS . In this project I increase my skills with micro-services and with NoSQL database (MongoDB)."
