@@ -329,10 +329,16 @@
                 company: 'I.T.I.S. "G.MARCONI" JESI',
                 description: "Obtained the IT Expert degree with 75/100."
             }, {
-                period: "October 2015 - Present",
+                period: "October 2015 - April 2019",
                 position: "Doctor of Computer Science",
                 company: "University of Camerino",
-                description: "I'm graduating in Computer Science at the University of Camerino."
+                description: "Graduated in Computer Science at the University of Camerino. With a thesis on the Design Pattern for Evolutive Objects with Prof Rosario Culmone."
+            },
+            {
+                period: "October 2019 - Present",
+                position: "Doctor of Computer Science in Artificial Intelligence",
+                company: "University of Pisa",
+                description: "I'm graduating in Computer Science with a curriculum in Artificial Intelligence at the University of Pisa."
             }]
         },
         60: function (e, t, a) {
