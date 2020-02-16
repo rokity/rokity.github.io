@@ -1,4 +1,4 @@
-{
+let orario = {
     "monday": {  "9:11":{"long_name":"Parallel and Distributed Systems: paradigms and models","short_name":"DS","room":"FIB N1"},"11:13":{"long_name":"Computational neuroscience","short_name":"CN","room":"AULA SI3 POLO B Ingegneria"},"14:16":{"long_name":"Human Language Technologies","short_name":"HLT","room":"FIB C1"},"16:18":{} }  ,
     "tuesday": {  "9:11":{"long_name":"Mobile and cyber-physical systems","short_name":"MCS","room":"FIB L1"},"11:13":{},"14:16":{},"16:18":{"long_name":"Parallel and Distributed Systems: paradigms and models","short_name":"DS","room":"FIB N1"} }  ,
     "wednesday": { "9:11":{"long_name":"Mobile and cyber-physical systems","short_name":"MCS","room":"FIB N1"},"11:13":{},"14:16":{"long_name":"Computational neuroscience","short_name":"CN","room":"AULA SI3 POLO B Ingegneria"},"16:18":{}  }  ,

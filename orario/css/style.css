@@ -1,0 +1,14 @@
+body{
+    background-color: 	#f0cfbe;
+    color: gray;
+    font-size: 15px;
+}
+
+
+td{
+    border-style: dotted none none dotted;
+    font-size: large;
+}
+.tdright{border-style: dotted dotted none dotted;}
+.tdleast{border-style: dotted none dotted dotted;}
+.tdrightleast{border-style: dotted dotted dotted dotted;}
