@@ -8,7 +8,7 @@ if (isMobile()) {
         h1.className += "weekend"
         document.body.appendChild(h1)
     }
-    else if (today.getHours() < 9 || today.getHours() >= 18) {
+    else if (today.getHours() < 9 || today.getHours() >= 18 || today.getHours==13) {
         let h1 = document.createElement("h1");
         h1.innerHTML += "I don't have lectures now!! </br> It's STUDY Time !!"
         h1.className += "weekend"
