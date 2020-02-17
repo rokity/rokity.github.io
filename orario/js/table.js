@@ -5,12 +5,7 @@ for(let i=0;i<4;i++)
     let tr = document.createElement("tr");
     days.forEach(day=>{
         let td=document.createElement("td");
-        if(i==3 && day=="friday")
-            td.className+="tdrightleast"
-        else if(day=="friday" && i!=3)
-            td.className+="tdright"
-        else if(i==3 && day!="friday")
-            td.className+="tdleast"
+        td=styleColumn(i,day,td)
         
         let materia=orario[day][ore[i]]
         if(Object.keys(materia).length==0)
@@ -21,3 +16,5 @@ for(let i=0;i<4;i++)
     })
     document.getElementById("orario").appendChild(tr);
 }
+
+
