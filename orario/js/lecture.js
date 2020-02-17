@@ -8,11 +8,8 @@ if (isMobile()) {
         h1.className += "weekend"
         document.body.appendChild(h1)
     }
-    else if (today.getHours() < 9 || today.getHours() >= 18 || today.getHours==13) {
-        let h1 = document.createElement("h1");
-        h1.innerHTML += "I don't have lectures now!! </br> It's STUDY Time !!"
-        h1.className += "weekend"
-        document.body.appendChild(h1)
+    else if (today.getHours() < 9 || today.getHours() >= 18 || today.getHours == 13) {
+        noLectures();
     }
     else {
         let lectures = orario[getDay(today).toLowerCase()]
@@ -28,10 +25,15 @@ if (isMobile()) {
             index = (one_more)
         if (keys.indexOf(less_one) != -1)
             index = (less_one)
-        let h1 = document.createElement("h1");
-        h1.innerHTML += lectures[index]["long_name"] + "</br>"+ lectures[index]["room"]
-        h1.className += "weekend"
-        document.body.appendChild(h1)
+        console.log(lectures[index].length)
+        if (index == -1 || Object.keys(lectures[index]).length==0)
+            noLectures()
+        else {
+            let h1 = document.createElement("h1");
+            h1.innerHTML += lectures[index]["long_name"] + "</br>" + lectures[index]["room"]
+            h1.className += "weekend"
+            document.body.appendChild(h1)
+        }
     }
 }
 
