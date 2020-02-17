@@ -1,14 +1,14 @@
 {
-  "short_name": "Rokity",
-  "name": "Riccardo Amadio rokity ",
+  "short_name": "Orario",
+  "name": "Orario",
   "icons": [
     {
-      "src": "favicon.png",
+      "src": "orario/favicon.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     }
   ],
-  "start_url": ".",
+  "start_url": "orario.html",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"

@@ -23,13 +23,13 @@ if (isMobile()) {
         let less_one = `${hour - 1}:${hour + 1}`
         let index = -1;
         if (keys.indexOf(exact_hour) != -1)
-            index = keys.indexOf(exact_hour)
+            index = (exact_hour)
         if (keys.indexOf(one_more) != -1)
-            index = keys.indexOf(one_more)
+            index = (one_more)
         if (keys.indexOf(less_one) != -1)
-            index = keys.indexOf(less_one)
+            index = (less_one)
         let h1 = document.createElement("h1");
-        h1.innerHTML += lectures[exact_hour]["long_name"] + "</br>"+ lectures[exact_hour]["room"]
+        h1.innerHTML += lectures[index]["long_name"] + "</br>"+ lectures[index]["room"]
         h1.className += "weekend"
         document.body.appendChild(h1)
     }
