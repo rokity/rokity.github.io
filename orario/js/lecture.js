@@ -1,12 +1,11 @@
 if (isMobile()) {
     document.getElementById("orario").setAttribute("style", "display:none")
     let today = new Date();
-    // let today = new Date(2020, 2, 16,18,30);
     if (isWeekend(today)) {
         let h1 = document.createElement("h1");
         h1.innerHTML += "It's Weekend!! </br> It's STUDY Time !!"
         h1.className += "weekend"
-        document.body.appendChild(h1)
+        document.getElementById("text").appendChild(h1)
     }
     else if (today.getHours() < 9 || today.getHours() >= 18 || today.getHours == 13) {
         noLectures();
@@ -25,17 +24,22 @@ if (isMobile()) {
             index = (one_more)
         if (keys.indexOf(less_one) != -1)
             index = (less_one)
-        console.log(lectures[index].length)
         if (index == -1 || Object.keys(lectures[index]).length==0)
             noLectures()
         else {
             let h1 = document.createElement("h1");
             h1.innerHTML += lectures[index]["long_name"] + "</br>" + lectures[index]["room"]
             h1.className += "weekend"
-            document.body.appendChild(h1)
+            document.getElementById("text").appendChild(h1)
         }
     }
 }
 
 
 
+
+let showTable = () => {
+    document.getElementById("orario").setAttribute("style", "display:block")
+    document.getElementById("text").setAttribute("style", "display:none")
+    document.getElementsByClassName("buttonshowtimetable")[0].setAttribute("style", "display:none")
+}
