@@ -21,3 +21,31 @@ td{
   transform: translate(-50%, -50%);
   font-size:60px;
 }
+.buttonshowtimetable{
+    display:block;
+    position:absolute;
+   top:0;
+   right:0;
+   background-color:rgb(254,203,47);
+  border: none;
+  color: white;
+   padding: 20px; 
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  font-weight: 900;
+  border-radius: 50%;
+margin: 4px 2px; 
+}
+
+
+#timetable{
+    width: 30x;
+    height: 30px;
+}
+@media screen and (min-width: 701px) {
+    .buttonshowtimetable{
+        display:none;
+    }
+  }

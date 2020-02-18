@@ -4,21 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Orario</title>
-  <link rel="shortcut icon" href="orario/favicon.png"/>
+  <link rel="shortcut icon" href="orario/favicon.png" />
   <link rel="stylesheet" type="text/css" href="./orario/css/style.css">
   <link rel="manifest" href="/manifest.json">
   <meta name="description" content="A sample timetable app">
   <meta name="theme-color" content="#2F3BA2" />
 
   </style>
-
-
-
 </head>
 
 <body>
+  <div class="buttonshowtimetable" onclick="showTable()">
+    <button>
+      <input type="image" id="timetable" aria-label="timetable" src="orario/favicon.png" />
+    </button>
+  </div>
+  <div id="text"> </div>
   <div style="overflow-x:auto;" id="orario">
-    <table align="center" >
+    <table align="center">
       <tr>
         <td>Lunedì</td>
         <td>Martedì</td>
@@ -34,4 +37,5 @@
 <script src="orario/js/utils.js"></script>
 <script src="orario/js/table.js"></script>
 <script src="orario/js/lecture.js"></script>
+
 </html>

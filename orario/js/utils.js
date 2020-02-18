@@ -43,5 +43,5 @@ let noLectures = () => {
     let h1 = document.createElement("h1");
     h1.innerHTML += "I don't have lectures now!! </br> It's STUDY Time !!"
     h1.className += "weekend"
-    document.body.appendChild(h1)
+    document.getElementById("text").appendChild(h1)
 }
