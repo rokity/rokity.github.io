@@ -280,26 +280,50 @@
             }]
         },
         57: function (e, t) {
-            t.experience = [{
+            t.experience = [
+                {
+                    period: "Jul 2021 - Mar 2023",
+                    company: "AgileLab",
+                    position: "Big Data Engineer III",
+                    description: "Coaching and Mentor new Data Engineers. Speaker and Teacher of Data Orchestrator, Modern Data Stack, Iceberg, Data Platform (PyData,CodeOverCommunity,DataBerlin,PythonMilan). Design and Implement for Fashion Company a Data Lakehouse for Analytics and AI team (Airflow,Spark,Iceberg,DeltaLake,Tableu,Databricks,dbt-athena,AWS). Integrate Data Governance using AWS Glue and Databricks Unity Catalog. Design and Implement a Data Platform for Luxury customer to replace enterprise datawarehouse (Airflow,Spark,Iceberg,Tableu,dbt-athena,AWS,Terraform,Karpenter,OpenTelemetry,Prometheus)"
+                },
+                {
+                    period: "Jul 2021 - Mar 2023",
+                    company: "Capgemini",
+                    position: "Senior Data Engineer",
+                    description: "Conversional Chatbot and Transfer Learning (Dialoglow,LUIS Microsoft) [TIM]. Computer Vision with AWS Sagemaker,PyTorch,OpenCV [Capgemini PoC] . IaaC Architecture for Data Engineer team with Composer, Airflow, BigQuery, Terraform,Grafana.[Generali Advanced Analytics]. Pipeline development and TimeSeries Forecast with PySpark and Palantir Foundry [Unicredit]. Pipeline Orchestration and Development with Dagster,PySpark, OpenShift in an On-Premise Environment [Leonardo Helicopter]."
+                },
+                {
+                    period: "Dic 2020 - Nov 2022",
+                    company: "University of Pisa",
+                    position: "Contract AI Researcher",
+                    description: "Taxonomy Search Engine applied to knowledge on Industry 4.0 from academics articles. Using Graph Recommend System and Information Retrieval techniques to creates a Search Engine. Topic modeling of academic articles to create a data-driven learning platform for industry and university on arguments like Artificial Intelligence and Industry 4.0. Practical Learning of Artificial Intelligence on the Edge for Industry 4.0 (PLANET4)."
+                },
+                {
+                    period: "Jul 2020 - Dic 2020",
+                    company: "Ammagamma",
+                    position: "Contract Cloud Data Engineer",
+                    description: "Engineering and speedup the process of development using Cloud Solutions and building custom libraries for Data Scientists. Write python modules for speedup Data Science and ML task. Creations of Cloud Solutions,Data Platforms and resolving problems of optimization for supply chain company."
+                },{
                 period: "May 2019 - September 2019",
                 company: "Amazon DE",
-                position: "Software Developer Intern",
-                description: "I worked on the department of ICQA for create an intern software for a better management of the team resources,time and statistics. The goal of the project it was to create an Web Platform where to control Job Failure , Data Issue, Ticketing Management, Visit Tracking System. Using Ruby on Rails , MySQL and PostgreSQL and AWS and Intern Tools (RedShift,SQS,SNS,CloudWatch,EC2, ...). From the timeline of the Ticketing System we can estimate the time for a new issue using the assigned user data and the gravity of the issue. This feature it's developed using ML implemented using AWS Engine."
+                position: "Data Engineer Intern",
+                description: "I work in the ICQA Department for developing a platform for show reports,statistics,graphs using Ruby on Rails and React . I used many tools and API of the AWS like SQS,SNS, Glue,CloudWatch,Redshift,EC2,DynamoDB and also I created and used API and library for ticketing system, data-failure and user-visit."
             },{
                 period: "May 2017 - May 2018",
                 company: "Regione Marche",
                 position: "Full Stack Web Developer",
-                description: "In this experience, I developed an application for countability of earthquake. I choose to use Node JS, SQL Server, Polymer for the facility of building microservices and  C.R.U.D. operations.In the meanwhile, I developed some modules for Cohesion, with ASP NET 4, Bootstrap and jQuery."
+                description: "I developed an application for countability of earthquake. I choose to use Node JS, SQL Server, Polymer for the facility of building microservices and C.R.U.D. operations.In the meanwhile, I developed some modules for Cohesion, with ASP NET 4, Bootstrap and jQuery."
             }, {
                 period: "May 2016 - Oct 2017",
                 company: "MyHomeAgenda",
                 position: "CTO & Co-Founder",
-                description: "In this experience I increased my skills of team working and manager of a team . I created new way of work to increase the production of the team. I actually working with Polymer and NodeJS , but we had some part of the project created with ReactJS . In this project I increase my skills with micro-services and with NoSQL database (MongoDB)."
+                description: "In this experience I increased my skills of team working and manager of a team . I created new way of work to increase the production of the team. I actually working with Polymer and NodeJS , but we had some part of the project created with ReactJS . In this project I increase my skills with micro-services (with Seneca and Hapi) and with NoSQL database (MongoDB)."
             }, {
                 period: "November 2015 - May 2016",
                 company: "Freelance",
                 position: "Full Stack Developer",
-                description: "In this experience I created an e-commerce with Prestashop and I implemented an algorithm for payments based on tree structure. I increase my skills about payment system like Skrill and PayPal."
+                description: "I created an Invite System for Prestashop where customers can invite other customer with a code. I used Paypal and Stripe to create payment and payouts ."
             }, {
                 period: "May 2015 - October 2015",
                 company: "KeyCover",
