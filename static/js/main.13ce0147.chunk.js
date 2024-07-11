@@ -282,7 +282,7 @@
         57: function (e, t) {
             t.experience = [
                 {
-                    period: "Jul 2021 - Mar 2023",
+                    period: "Mar 2023 - Present",
                     company: "AgileLab",
                     position: "Big Data Engineer III",
                     description: "Coaching and Mentor new Data Engineers. Speaker and Teacher of Data Orchestrator, Modern Data Stack, Iceberg, Data Platform (PyData,CodeOverCommunity,DataBerlin,PythonMilan). Design and Implement for Fashion Company a Data Lakehouse for Analytics and AI team (Airflow,Spark,Iceberg,DeltaLake,Tableu,Databricks,dbt-athena,AWS). Integrate Data Governance using AWS Glue and Databricks Unity Catalog. Design and Implement a Data Platform for Luxury customer to replace enterprise datawarehouse (Airflow,Spark,Iceberg,Tableu,dbt-athena,AWS,Terraform,Karpenter,OpenTelemetry,Prometheus)"
