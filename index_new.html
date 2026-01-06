@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riccardo Amadio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background-color: #0a0a0a;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            font-weight: 300;
+            margin-bottom: 1em;
+            letter-spacing: -0.02em;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            font-weight: 300;
+            color: #b0b0b0;
+        }
+
+        .contacts {
+            margin-top: 3em;
+            display: flex;
+            gap: 2em;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .contacts a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1em;
+            font-weight: 300;
+            transition: color 0.2s ease;
+        }
+
+        .contacts a:hover {
+            color: #0077b5;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            p {
+                font-size: 1.1em;
+            }
+
+            .contacts {
+                flex-direction: column;
+                gap: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>I'm Riccardo Amadio</h1>
+        <p>and I'm building and maintaining data infrastructure and pipelines.</p>
+        <p>Yes, I'm also senior software engineer ...</p>
+
+        <div class="contacts">
+            <a href="https://www.linkedin.com/in/riccardo-amadio-91b59b90/" target="_blank">LinkedIn</a>
+            <a href="mailto:riccardo.amadio1@gmail.com">Email</a>
+        </div>
+    </div>
+</body>
+</html>
